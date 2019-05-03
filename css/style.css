@@ -140,7 +140,7 @@ body {
   font-family: "微软雅黑", 'Microsoft JhengHei', Tahoma, Helvetica, Arial, "\5b8b\4f53", sans-serif;
   font-size: 16px;
   background: #3f3f3f;
-  color: #999;
+  color: #fff;
   -webkit-overflow-scrolling: touch;
 }
 ::selection {
@@ -3378,7 +3378,7 @@ a.gitment-editor-footer-tip:hover {
   color: #fff;
 }
 .copyright:hover p .copy-path::after {
-  content: "复制";
+  content: "Copy";
 }
 .copyright .post-url:hover {
   font-weight: normal;
