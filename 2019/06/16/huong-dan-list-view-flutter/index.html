@@ -3,15 +3,22 @@
 <head><meta name="generator" content="Hexo 3.8.0">
   <meta charset="utf-8">
   
-  <title>XuanLocLe&#39;s Blog</title>
+  <title>Hướng dẫn sử dụng listview trong Flutter | XuanLocLe&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="XuanLocLe&#39;s Blog">
-<meta property="og:url" content="http://xuanlocle.github.io/index.html">
+  <meta name="description" content="Trước khi bắt đầu, mình muốn chắc chắn rằng bạn đã có cài đặt flutter. Nếu chưa cài, mình sẽ có bài hướng dẫn cài flutter trong tương lai.Giờ thì bạn có thể search cách cài đặt flutter trên google nhé">
+<meta name="keywords" content="flutter, listview">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hướng dẫn sử dụng listview trong Flutter">
+<meta property="og:url" content="http://xuanlocle.github.io/2019/06/16/huong-dan-list-view-flutter/index.html">
 <meta property="og:site_name" content="XuanLocLe&#39;s Blog">
+<meta property="og:description" content="Trước khi bắt đầu, mình muốn chắc chắn rằng bạn đã có cài đặt flutter. Nếu chưa cài, mình sẽ có bài hướng dẫn cài flutter trong tương lai.Giờ thì bạn có thể search cách cài đặt flutter trên google nhé">
 <meta property="og:locale" content="en">
+<meta property="og:image" content="http://xuanlocle.github.io/2019/06/16/huong-dan-list-view-flutter/listview-flutter.jpg">
+<meta property="og:updated_time" content="2019-06-16T16:48:27.788Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="XuanLocLe&#39;s Blog">
+<meta name="twitter:title" content="Hướng dẫn sử dụng listview trong Flutter">
+<meta name="twitter:description" content="Trước khi bắt đầu, mình muốn chắc chắn rằng bạn đã có cài đặt flutter. Nếu chưa cài, mình sẽ có bài hướng dẫn cài flutter trong tương lai.Giờ thì bạn có thể search cách cài đặt flutter trên google nhé">
+<meta name="twitter:image" content="http://xuanlocle.github.io/2019/06/16/huong-dan-list-view-flutter/listview-flutter.jpg">
   
     <link rel="alternative" href="/atom.xml" title="XuanLocLe&#39;s Blog" type="application/atom+xml">
   
@@ -25,9 +32,6 @@
   <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   
-    
-    
-  
   
       <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
   
@@ -39,8 +43,8 @@
           rootUrl: '/',
           fancybox: true,
           animate: true,
-          isHome: true,
-          isPost: false,
+          isHome: false,
+          isPost: true,
           isArchive: false,
           isTag: false,
           isCategory: false,
@@ -193,80 +197,7 @@
         </header>                
     </div>
 </nav>
-      <div class="body-wrap">
-  
-    <article id="post-blog-dau-tien" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2019/05/03/blog-dau-tien/" class="article-date">
-      <time datetime="2019-05-02T18:13:30.000Z" itemprop="datePublished">2019-05-03</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/05/03/blog-dau-tien/">Blog đầu tiên nên đặt tựa là gì?</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-        <h1 id="Loi-mo-dau"><a href="#Loi-mo-dau" class="headerlink" title="Lời mở đầu"></a>Lời mở đầu</h1><hr>
-<p>Chào mọi người, thật ngại quá. Đây là blog - có thể được gọi là đầu tiên của mình hiện tại. Trước đây mình từng viết blog về tình yêu, về những cảm nhận sâu sắc các thứ nhưng sau một thời gian thấy không hợp nên mình xóa hết rồi. Hehe, từ đây mình sẽ làm quen với những điều mới mẻ, lặng lẽ mà viết một blog của mình thôi. </p>
-<h1 id="Vay…-minh-la-ai"><a href="#Vay…-minh-la-ai" class="headerlink" title="Vậy… mình là ai?"></a>Vậy… mình là ai?</h1><p>Hiện tại mình đang là dev tại một công ty đầy tiềm năng trong lĩnh vực xây dựng. Công việc của cũng không xoay quanh gì ngoài những dòng code huyền bí, những UI hợp lý và những anh chị đầy nhiệt huyết luôn hết mình bất thình lình trong công việc. Không những thế, mình còn có hàng tá những ứng dụng muốn làm. Cái mình thiếu chỉ là thời gian mà thôi, hị hị.</p>
-<h1 id="Muc-phu"><a href="#Muc-phu" class="headerlink" title="Mục phụ"></a>Mục phụ</h1><p>Cái gì cũng có sự bắt đầu, để đến mục đích phải có mục phụ, ai viết blog cũng sẽ trải qua những bài viết đầu tiên. Và, “mục phụ” của bài viết này là mình khoe mình đã có blog mới. Nhẹ hơn, lược giản hơn ít tính năng hơn. Nhưng mình thích là được.</p>
-<h1 id="Muc-dich-chinh"><a href="#Muc-dich-chinh" class="headerlink" title="Mục đích chính"></a>Mục đích chính</h1><hr>
-<p>Mục đích chính của mình vẫn là khoe blog của mình. Nhưng khoan, blog của mình hiện tại đang sử dụng <strong>github page</strong> - nếu bạn muốn xây dựng một website mà chỉ bao gồm HTML, CSS và Js. Bạn có thể xây dựng 1 static web hoàn toàn miễn phí phục vụ cho việc học tập hoặc thậm chí cho mục đích kinh doanh với nó <a href="https://pages.github.com" target="_blank" rel="noopener">https://pages.github.com</a>.</p>
-<ul>
-<li>Lợi ích của Github Page là dễ dàng cài đặt, dễ dàng commit các nội dung mới. Và hơn hết, nó nhẹ nữa.</li>
-<li>Điểm khó khăn của Github Page là khó khăn với newbie, bạn sẽ tốn kha khá thời gian để vật lộn với github, với repository, với hexo, cách trỏ DNS hay thậm chí là cách viết bài với Markdown nữa. Nhưng đừng lo, vô số đàn anh đàn chị đi trước đã để lại một kho hướng dẫn đồ sộ trên google. Nên cũng không quá khó khăn nếu bạn là người mới đâu nhé!</li>
-<li>Nếu bạn cảm thấy muốn phát triển một blog dễ dàng hơn, mình khuyến cáo bạn nên dùng wordpress.com. Giao diện trực quan, tạo xong tài khoản, up avatar, banner, đặt một tiêu đề thật chất, viết vài dòng nội dung là bạn có thể trở thành blogger rồi. Thú vị phải không nào.</li>
-</ul>
-<hr>
-<h1 id="Yeu"><a href="#Yeu" class="headerlink" title="Yêu"></a>Yêu</h1><p>Thế giới hơn 8 tỷ người, hàng ngàn hàng triệu trang blog nhan nhản trên mang từng sứ mệnh riêng. Mình thừa nhận chúng ta có duyên số, nên nếu có thể, bạn hãy cho mình xin một số bình luận cho vui nhà vui blog. Giờ là 1 giờ sáng và mình đã đọc đi đọc lại 3 lần blog này, chứng tỏ mình trân trọng bạn đọc biết bao. Hị hị. Nếu bạn tò mò tại sao mình không giải thích cái tiêu đề thì bạn đoán đi.</p>
-
-      
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-
-      
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/tan-man/">tản mạn</a></li></ul>
-    </div>
-
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-huong-dan-list-view-flutter" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-huong-dan-list-view-flutter" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
       <a href="/2019/06/16/huong-dan-list-view-flutter/" class="article-date">
@@ -282,12 +213,23 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/06/16/huong-dan-list-view-flutter/">Hướng dẫn sử dụng listview trong Flutter</a>
+    <h1 class="article-title" itemprop="name">
+      Hướng dẫn sử dụng listview trong Flutter
     </h1>
   
 
       </header>
+      
+      <div class="article-info article-info-post">
+        
+
+        
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/flutter-listview/">flutter, listview</a></li></ul>
+    </div>
+
+        <div class="clearfix"></div>
+      </div>
       
     
     <div class="article-entry" itemprop="articleBody">
@@ -312,23 +254,66 @@
       
     </div>
     
-    <div class="article-info article-info-index">
-      
-      
-
-      
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/flutter-listview/">flutter, listview</a></li></ul>
-    </div>
-
-      
-      <div class="clearfix"></div>
-    </div>
-    
   </div>
+  
+    
+    <div class="copyright">
+        <p><span>Title:</span><a href="/2019/06/16/huong-dan-list-view-flutter/">Hướng dẫn sử dụng listview trong Flutter</a></p>
+        <p><span>Author:</span><a href="/" title="Access Xuan Loc Le Blog">Xuan Loc Le</a></p>
+        <p><span>Posted on:</span>16, 06, 2019 - 23:42</p>
+        <p><span>Updated on:</span>16, 06, 2019 - 23:48</p>
+        <p>
+            <span>Link:</span><a class="post-url" href="/2019/06/16/huong-dan-list-view-flutter/" title="Hướng dẫn sử dụng listview trong Flutter">http://xuanlocle.github.io/2019/06/16/huong-dan-list-view-flutter/</a>
+            <span class="copy-path" data-clipboard-text="Link: http://xuanlocle.github.io/2019/06/16/huong-dan-list-view-flutter/　　Author: Xuan Loc Le" title="Click to copy the article link"><i class="fa fa-clipboard"></i></span>
+            <script src="/js/clipboard.min.js"></script>
+            <script> var clipboard = new Clipboard('.copy-path'); </script>
+        </p>
+       
+    </div>
+
+
+
+<nav id="article-nav">
+  
+  
+    <a href="/2019/05/03/blog-dau-tien/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Blog đầu tiên nên đặt tựa là gì?</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
   
 </article>
 
+    <div id="toc" class="toc-article">
+    <strong class="toc-title">Article</strong>
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Import-cac-thu-vien-can-thiet"><span class="toc-number">1.</span> <span class="toc-text">Import các thư viện cần thiết</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Bat-dau-tao-listview-trong-flutter"><span class="toc-number">2.</span> <span class="toc-text">Bắt đầu tạo listview trong flutter</span></a></li></ol>
+</div>
+<input type="button" id="tocButton" value="Hide" title="Click this button to hide or showArticle">
+
+<script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+<script>
+    var valueHide = "Hide";
+    var valueShow = "Show";
+
+    if ($(".left-col").is(":hidden")) {
+        $("#tocButton").attr("value", valueShow);
+    }
+    $("#tocButton").click(function() {
+        if ($("#toc").is(":hidden")) {
+            $("#tocButton").attr("value", valueHide);
+            $("#toc").slideDown(320);
+        }
+        else {
+            $("#tocButton").attr("value", valueShow);
+            $("#toc").slideUp(350);
+        }
+    })
+    if ($(".toc").length < 1) {
+        $("#toc, #tocButton").hide();
+    }
+</script>
 
 
 
@@ -336,89 +321,61 @@
 
 
 
-
-  
-    <article id="post-test" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2019/05/02/test/" class="article-date">
-      <time datetime="2019-05-02T13:31:21.000Z" itemprop="datePublished">2019-05-02</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
     
-      <input type="hidden" class="isFancy">
+        <div id="gitments"></div>
+<script src="/js/gitment.browser.js"></script>
+<script>
+    var gitment = new Gitment({
+      id: window.location.pathname,
+      owner: 'xuanlocle',
+      repo: 'xuanlocle.github.io',
+      oauth: {
+        client_id: '',
+        client_secret: '',
+      },
+    })
+    gitment.render('gitments')
+</script>
     
-    
-      <header class="article-header">
+
+
+
+    <div class="scroll" id="post-nav-button">
         
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/05/02/test/">Cheerio là gì?</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-        <h1 id="Cheerio-la-gi"><a href="#Cheerio-la-gi" class="headerlink" title="Cheerio là gì?"></a>Cheerio là gì?</h1><hr>
-<p>Đây là thư viện javascript rất mạnh dùng trong việc crawl dữ liệu, thư viện này cung cấp bộ Cheerio Selector gần giống như với jQuery Selector cho nên việc sử dụng<br>các hàm cũng tương tự như cách sử dụng jQuery Selector. Nói đơn giản bạn có sử dụng các hàm quen thuộc khi sử dụng jQuery ví dụ như : .html() để lấy đoạn mã html, attr( name, value ) để lấy thuộc tính phần tử,…<br>hệt như khi sử dụng Jquery, thông tin chi tiết về cách hoạt động của thư viện này bạn có thể tìm hiểu thêm tại <a href="https://github.com/cheeriojs/cheerio" target="_blank" rel="noopener">đây</a>.</p>
-<h1 id="Viet-ung-dung-demo-tu-dong-thong-bao-khi-co-chuong-truyen-moi"><a href="#Viet-ung-dung-demo-tu-dong-thong-bao-khi-co-chuong-truyen-moi" class="headerlink" title="Viết ứng dụng demo tự động thông báo khi có chương truyện mới"></a>Viết ứng dụng demo tự động thông báo khi có chương truyện mới</h1><hr>
-<p>Luồng thực hiện của chúng ta như sau:</p>
-<ul>
-<li>Bước 1: Lấy danh sách chương mới nhất của truyện</li>
-<li>Bước 2: So sánh chương truyện này với chương truyện được lưu trong file json để biết được có chương truyện mới hay chưa, nếu file này chưa có tiến hành tạo mới</li>
-<li>Bước 3: Nếu có chương truyện mới : lấy chi tiết truyện -&gt; gửi email thông báo</li>
-</ul>
-<p>Nào bắt tay vào thực hiện thôi</p>
-<hr>
-<p>Thực hiện cài đặt thư viện cheerio và request ( thư viện này dùng gọi tới địa chỉ website muốn crawl dữ liệu)</p>
-<figure class="highlight javascript"><figcaption><span>[] [] [] [link text]</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">npm install cheerio --save</span><br><span class="line">npm install request --save</span><br><span class="line">npm install nodemailer --save</span><br></pre></td></tr></table></figure>
-<p>Thực hiện khai báo các thư viện cần thiết</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">const cheerio = require('cheerio');</span><br><span class="line">const request = require('request');</span><br><span class="line">const fs = require('fs');</span><br><span class="line">const nodemailer =  require('nodemailer');</span><br></pre></td></tr></table></figure>
-<p>Sau đó  viết ra hàm Crawler thực hiện lấy chương mới nhất từ trang truyện -&gt; so sánh với file json</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br></pre></td><td class="code"><pre><span class="line">//   Hàm lấy dữ liệu từ website</span><br><span class="line">function Crawler()</span><br><span class="line">&#123;</span><br><span class="line">    //Gửi 1 request tới website</span><br><span class="line">    request('http://truyencv.com/pham-nhan-tu-tien-chi-tien-gioi-thien/', function (err, res, body) </span><br><span class="line">    &#123;</span><br><span class="line">        //  Sử dụng cheerio.load để lấy dữ liệu trả về</span><br><span class="line">        var $ = cheerio.load(body);</span><br><span class="line">        //  Lấy chương mới nhất của truyện</span><br><span class="line">        var newestChap = $('.list-overview .item .item-value a').text();</span><br><span class="line">        var obj = &#123;</span><br><span class="line">            'newestChap' : newestChap</span><br><span class="line">        &#125;</span><br><span class="line">        var json = JSON.stringify(obj);</span><br><span class="line">        //  Kiểm tra file newchap.json tồn tại không</span><br><span class="line">        if (!fs.existsSync('newchap.json')) &#123;</span><br><span class="line">            //  Nếu chưa tồn tại tạo file  mới</span><br><span class="line">            fs.writeFile('newchap.json', json, '', (err)=&gt;&#123;</span><br><span class="line">                if (err) throw err;</span><br><span class="line">                console.log('Tạo file newchap.json thành công!');</span><br><span class="line">            &#125;);</span><br><span class="line">            return; </span><br><span class="line">        &#125;</span><br><span class="line">        //  Đọc file newchap.json nằm trong thư mục dự án</span><br><span class="line">        fs.readFile('newchap.json', function readFileCallback(err, data)</span><br><span class="line">        &#123;</span><br><span class="line">            if (err)</span><br><span class="line">            &#123;</span><br><span class="line">                console.log('Đọc file newchap.json thất bại!');</span><br><span class="line">                return;</span><br><span class="line">            &#125; </span><br><span class="line">            else </span><br><span class="line">            &#123;</span><br><span class="line">                // Lấy chương truyện mới nhất từ file json</span><br><span class="line">                obj = JSON.parse(data); </span><br><span class="line">                var dbChap = obj.newestChap;</span><br><span class="line">                //  So sánh 2 chương truyện nếu khác nhau -&gt; đã có chương mới</span><br><span class="line">                if(newestChap !== dbChap)</span><br><span class="line">                &#123;</span><br><span class="line">                    //  Lưu chương mới vào file newchap.json</span><br><span class="line">                    fs.writeFile('newchap.json', json, '', (err)=&gt;&#123;</span><br><span class="line">                        if (err) throw err;</span><br><span class="line">                        console.log('Đã có chương mới!');</span><br><span class="line">                        console.log('Cập nhật newchap.json thành công!');</span><br><span class="line">                    &#125;);</span><br><span class="line">                    //  Lấy đường dẫn chương truyện mới</span><br><span class="line">                    var detailUrl = $('.list-overview .item .item-value a').attr('href');</span><br><span class="line">                    //  Tạo yêu cầu mới -&gt; lấy thông tin chương mới</span><br><span class="line">                    request(detailUrl, (err, res, body)=&gt;&#123;</span><br><span class="line">                        let cheerioDetail = cheerio.load(body);</span><br><span class="line">                        let contentDetail = cheerioDetail('.truyencv-read-content .content').text();</span><br><span class="line">                        // Gửi email thông báo</span><br><span class="line">                        sendEmail(newestChap,contentDetail);</span><br><span class="line">                        </span><br><span class="line">                    &#125;);</span><br><span class="line">                &#125;</span><br><span class="line">                else&#123;</span><br><span class="line">                    console.log('Chưa có chương mới!');</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;);</span><br><span class="line">    &#125;)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>Viết thêm hàm sendEmail sử dụng thư viện nodemailer để gửi như sau:</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">function sendEmail(subject, content)</span><br><span class="line">&#123;</span><br><span class="line">    var transporter = nodemailer.createTransport(&#123;</span><br><span class="line">        service : 'gmail',</span><br><span class="line">        auth: &#123;</span><br><span class="line">            user : 'xuanlocle2412@gmail.com',</span><br><span class="line">            pass : 'matkhaucuaban'</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;);</span><br><span class="line">    var mailOptions= &#123;</span><br><span class="line">        from : 'xuanlocle2412@gmail.com',</span><br><span class="line">        to: 'xuanlocle2412@gmail.com',</span><br><span class="line">        subject : 'Pham nhan tu tien ra chuong moi '+subject,</span><br><span class="line">        text : content</span><br><span class="line">    &#125;</span><br><span class="line">    transporter.sendMail(mailOptions, function(err, info)&#123;</span><br><span class="line">        if(err)</span><br><span class="line">        &#123;</span><br><span class="line">            console.log('Lỗi khi gửi mail: ', err);</span><br><span class="line">        &#125;</span><br><span class="line">        else</span><br><span class="line">        &#123;</span><br><span class="line">            console.log('Đã gửi email: ', info.response);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>Cuối cùng viết thêm 1 hàm lặp thao tác Crawler này 3 giây một lần</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var timer = setInterval(function() &#123;</span><br><span class="line">    return Crawler();</span><br><span class="line">&#125;, 5000);</span><br></pre></td></tr></table></figure>
-<p>Sau đó ta chạy lệnh node server.js trong cửa sổ command và chờ mail được gửi thôi!<br>Như vậy mình đã hướng dẫn cho các bạn làm 1 ví dụ demo đơn giản crawl dữ liệu với cheerio và nodejs. Cảm ơn và hẹn gặp lại các bạn trong những bài sau</p>
-
-      
-      
+            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
+        
+        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+        
+            <a href="/2019/05/03/blog-dau-tien/" title="下一篇: Blog đầu tiên nên đặt tựa là gì?">
+                <i class="fa fa-angle-right"></i>
+            </a>
+        
     </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-
-      
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/chia-se/">chia sẻ</a></li></ul>
-    </div>
-
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2019/06/16/huong-dan-list-view-flutter/">Hướng dẫn sử dụng listview trong Flutter</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/05/03/blog-dau-tien/">Blog đầu tiên nên đặt tựa là gì?</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/05/02/test/">Cheerio là gì?</a></li></ul>
+    <script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+    <script>
+        $(".post-list").addClass("toc-article");
+        $(".post-list-item a").attr("target","_blank");
+        $("#post-nav-button > a:nth-child(2)").click(function() {
+            $(".fa-bars, .fa-times").toggle();
+            $(".post-list").toggle(300);
+            if ($(".toc").length > 0) {
+                $("#toc, #tocButton").toggle(200, function() {
+                    if ($(".switch-area").is(":visible")) {
+                        $("#tocButton").attr("value", valueHide);
+                        }
+                    })
+            }
+            else {
+            }
+        })
+    </script>
 
 
 
-
-
-  
-  
+    <script>
+        
+    </script>
 </div>
       <footer id="footer">
     <div class="outer">
